@@ -27,7 +27,7 @@ const TempChart = ({ retailSales, weekEnding }: any) => {
     labels: weekEnding, // ["January", "February", "March", "April", "May", "June"], // X-axis labels
     datasets: [
       {
-        // label: "Sales 2025", // Dataset label
+        label: "Retail Sales", // Dataset label
         // data: [150, 200, 250, 220, 300, 400], // Y-axis data
         data: retailSales,
         borderColor: "rgba(75, 192, 192, 1)", // Line color
