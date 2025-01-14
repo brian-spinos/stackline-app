@@ -1,9 +1,9 @@
 {
-  "name": "stackline",
+  "name": "stackline-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://brian-spinos.github.io/stackline",
+  "homepage": "http://brian-spinos.github.io/stackline-app",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
