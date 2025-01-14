@@ -2,7 +2,6 @@ interface LeftSidebarProps {
   product: any;
 }
 const LeftSidebar = ({ product }: LeftSidebarProps) => {
-  // console.log({ product });
   return (
     <div className="bg-white shadow rounded m-3 p-10 h-screen">
       <img src={product?.image} width="100px" height="100px" />

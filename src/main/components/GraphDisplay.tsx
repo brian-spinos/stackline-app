@@ -16,12 +16,6 @@ const GraphDisplay = ({ sales }: any) => {
   return (
     <div className="bg-white shadow rounded m-3 p-10">
       <h1>Retail Sales</h1>
-      {/* <p>sales: {JSON.stringify(sales)}</p> */}
-      {/* .retailSales */}
-
-      {/* {sales.map((s: any) => (
-        <p>{s.retailSales}</p>
-      ))} */}
 
       <div className="flex flex-col bg-red-500--">
         <div className="flex flex-col bg-red-500-- my-10">

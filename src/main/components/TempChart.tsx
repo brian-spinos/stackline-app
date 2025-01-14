@@ -22,14 +22,9 @@ ChartJS.register(
 );
 
 const TempChart = ({ retailSales, weekEnding }: any) => {
-  // const generateNStrings = () => {
-  //   return new Array(retailSales?.length).fill("");
-  // };
   console.log({ retailSales });
   const data = {
-    // labels: ["January", "February", "March", "April", "May", "June"], // X-axis labels
-    // labels: generateNStrings(),
-    labels: weekEnding,
+    labels: weekEnding, // ["January", "February", "March", "April", "May", "June"], // X-axis labels
     datasets: [
       {
         // label: "Sales 2025", // Dataset label

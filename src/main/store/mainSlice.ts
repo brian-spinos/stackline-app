@@ -4,12 +4,9 @@ import { DataResult, SeachState } from "./storeInterfaces";
 import jsonData from "./data.json";
 
 let initialState: SeachState = {
-  value: 0,
-  query: "",
   results: [],
   searchData: [],
-  isLoading: false,
-  error: "",
+  value: 0,
 };
 
 // ===================== Async thunks
@@ -42,17 +39,15 @@ const exampleSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
-        state.isLoading = true;
-        state.error = "";
+        //
+        return state;
       })
       .addCase(fetchData.fulfilled, (state, action) => {
-        state.isLoading = false;
         state.results = action.payload;
-        state.error = "";
       })
-      .addCase(fetchData.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.error.message || "ERROR";
+      .addCase(fetchData.rejected, (state) => {
+        //
+        return state;
       });
   },
 });

@@ -6,11 +6,8 @@ import TableDisplay from "./TableDisplay";
 import { useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import {
-  /*increment, decrement, setValue,*/ fetchData,
-} from "../store/mainSlice";
+import { fetchData } from "../store/mainSlice";
 import type { AppDispatch } from "../store/store";
-// import { SeachState } from "../store/storeInterfaces";
 
 interface ProductState {
   product: any;
@@ -46,11 +43,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-
-      {/* <h1>Value: {value}</h1> */}
-      {/* <button onClick={() => dispatch(increment())}>Increment</button> */}
-      {/* <button onClick={() => dispatch(decrement())}>Decrement</button> */}
-      {/* <button onClick={() => dispatch(setValue(10))}>Set to 10</button> */}
     </>
   );
 };
