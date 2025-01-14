@@ -1,9 +1,10 @@
 import stacklineLogo from "/stackline_logo.svg";
 import MyButton from "./main/components/Button";
+import BasicCard from "./main/components/BasicCard";
 
 function App() {
   return (
-    <>
+    <div className="m-10 bg-yellow-500">
       <div>
         <h1>Stackline</h1>
 
@@ -15,10 +16,11 @@ function App() {
           />
         </a>
       </div>
-      <div className="card"></div>
 
       <MyButton />
-    </>
+
+      <BasicCard />
+    </div>
   );
 }
 
